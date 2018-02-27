@@ -1,13 +1,10 @@
 spring:
   liquibase:
     change-log: classpath:db/changelog/db.changelog-master.xml
-
-spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/product 
     driver-class-name: org.postgresql.Driver
     username: postgres 
     password: elise  
-    
   jpa:
     hibernate.ddl-auto: create-drop
