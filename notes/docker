@@ -1,0 +1,3 @@
+docker run --name questionmarks-psql -p 5432:5432 -e POSTGRES_DB=questionmarks -e POSTGRES_PASSWORD=mysecretpassword -d postgres
+
+docker run -d -p 27017:27107 -v ~/data:/data/db mongo
