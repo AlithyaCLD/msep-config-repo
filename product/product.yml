@@ -7,4 +7,9 @@ spring:
     username: postgres 
     password: elise  
   jpa:
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
     hibernate.ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQL9Dialect
