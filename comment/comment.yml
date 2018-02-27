@@ -1,0 +1,15 @@
+#mongodb
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: comments
+
+#logging
+logging:
+  level: 
+    org:
+      springframework:
+        data: debug
+  level.: error
