@@ -3,3 +3,8 @@ product:
     - Tomate
     - Orange
     - Lime
+  datasource:
+    url: ${vcap.services.postgres-server.credentials.url}
+    driver-class-name: org.postgresql.Driver
+    username: ${vcap.services.postgres-server.credentials.username}
+    password: ${vcap.services.postgres-server.credentials.password}
